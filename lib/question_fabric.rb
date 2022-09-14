@@ -27,7 +27,7 @@ class QuestionFabric
         hash[:correct_answer] = variant_node.text if variant_node.attributes['right']
         hash[:variants] << variant_node.text
       end
-      new(hash)
+      self.new(hash)
     end
   end
 
